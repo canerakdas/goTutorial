@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello boy</title>
+  </head>
+  <body>
+    {{range .Person}}
+      <h1>Person: {{.Name}}</h1>
+      <p>
+        Dear {{.Surname}},
+        Welcome to your next misson.
+        n: {{.Age}}
+      </p>
+    {{end}}
+    
+    <ul>
+    {{range .Note}}
+      <li>{{.}}</li>
+    {{end}}
+    </ul>
+  </body>
+</html>
